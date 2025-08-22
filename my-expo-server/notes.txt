@@ -1,0 +1,24 @@
+I already generate a permanent, unique userId for each registered user on the server.
+I want each user’s contact list to store three things for each contact:
+
+1. contactId — a unique identifier for the contact entry in that user’s list.
+
+
+2. contactName — the name the user assigns to that contact (can be different from the actual username).
+
+
+3. userId — the global permanent ID of the contact user.
+
+
+
+I need:
+
+A recommended database schema that supports this separation.
+
+Example Node.js backend code to create and retrieve contacts without mixing up contactId, contactName, and userId.
+
+A suggested client-side data structure and best practice for displaying contactName (falling back to username if missing).
+
+Best practices for keeping userId as the primary identifier for system logic, while contactId is only for contact management.
+
+
